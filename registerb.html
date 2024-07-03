@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Register</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="reg.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="container mt-3">
+    <form id="register-form" method="post" action="php/register.php">
+      <div class="mb-3 mt-3">
+        <label for="first_name">First name:</label>
+        <input
+          type="text"
+          class="form-control"
+          id="first_name"
+          placeholder="Enter first name"
+          name="first_name"
+          required
+        />
+      </div>
+      <div class="mb-3 mt-3">
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          placeholder="Enter email"
+          name="email"
+          required
+        />
+      </div>
+      <div class="mb-3">
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          class="form-control"
+          id="password"
+          placeholder="Enter password"
+          name="password"
+          required
+        />
+      </div>
+      <div class="mb-3">
+        <label for="confirm_password">Confirm password:</label>
+        <input
+          type="password"
+          class="form-control"
+          id="confirm_password"
+          placeholder="Please repeat your password"
+          name="confirm_password"
+          required
+        />
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <span class="signup">Already have an account?
+        <a href="login.html">Login</a>
+       </span>
+    </form>
+  </div>
+</body>
+</html>

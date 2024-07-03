@@ -1,0 +1,30 @@
+Error: Call to a member function get_user_by_id() on null in C:\xampp\htdocs\webprogramming1\rest\routes\women.php:112
+Stack trace:
+#0 [internal function]: {closure}()
+#1 C:\xampp\htdocs\webprogramming1\vendor\mikecao\flight\flight\core\Dispatcher.php(354): call_user_func_array(Object(Closure), Array)
+#2 C:\xampp\htdocs\webprogramming1\vendor\mikecao\flight\flight\core\Dispatcher.php(287): flight\core\Dispatcher->invokeCallable(Object(Closure), Array)
+#3 C:\xampp\htdocs\webprogramming1\vendor\mikecao\flight\flight\Engine.php(522): flight\core\Dispatcher->execute(Object(Closure), Array)
+#4 [internal function]: flight\Engine->_start()
+#5 C:\xampp\htdocs\webprogramming1\vendor\mikecao\flight\flight\core\Dispatcher.php(379): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\webprogramming1\vendor\mikecao\flight\flight\core\Dispatcher.php(287): flight\core\Dispatcher->invokeCallable(Array, Array)
+#7 C:\xampp\htdocs\webprogramming1\vendor\mikecao\flight\flight\core\Dispatcher.php(131): flight\core\Dispatcher->execute(Array, Array)
+#8 C:\xampp\htdocs\webprogramming1\vendor\mikecao\flight\flight\core\Dispatcher.php(95): flight\core\Dispatcher->runEvent('start', Array)
+#9 C:\xampp\htdocs\webprogramming1\vendor\mikecao\flight\flight\Engine.php(113): flight\core\Dispatcher->run('start', Array)
+#10 C:\xampp\htdocs\webprogramming1\vendor\mikecao\flight\flight\Flight.php(119): flight\Engine->__call('start', Array)
+#11 C:\xampp\htdocs\webprogramming1\index.php(19): Flight::__callStatic('start', Array)
+#12 {main}
+Error: Call to a member function get_user_by_id() on null in C:\xampp\htdocs\webprogramming1\rest\routes\women.php:112
+Stack trace:
+#0 [internal function]: {closure}()
+#1 C:\xampp\htdocs\webprogramming1\vendor\mikecao\flight\flight\core\Dispatcher.php(354): call_user_func_array(Object(Closure), Array)
+#2 C:\xampp\htdocs\webprogramming1\vendor\mikecao\flight\flight\core\Dispatcher.php(287): flight\core\Dispatcher->invokeCallable(Object(Closure), Array)
+#3 C:\xampp\htdocs\webprogramming1\vendor\mikecao\flight\flight\Engine.php(522): flight\core\Dispatcher->execute(Object(Closure), Array)
+#4 [internal function]: flight\Engine->_start()
+#5 C:\xampp\htdocs\webprogramming1\vendor\mikecao\flight\flight\core\Dispatcher.php(379): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\webprogramming1\vendor\mikecao\flight\flight\core\Dispatcher.php(287): flight\core\Dispatcher->invokeCallable(Array, Array)
+#7 C:\xampp\htdocs\webprogramming1\vendor\mikecao\flight\flight\core\Dispatcher.php(131): flight\core\Dispatcher->execute(Array, Array)
+#8 C:\xampp\htdocs\webprogramming1\vendor\mikecao\flight\flight\core\Dispatcher.php(95): flight\core\Dispatcher->runEvent('start', Array)
+#9 C:\xampp\htdocs\webprogramming1\vendor\mikecao\flight\flight\Engine.php(113): flight\core\Dispatcher->run('start', Array)
+#10 C:\xampp\htdocs\webprogramming1\vendor\mikecao\flight\flight\Flight.php(119): flight\Engine->__call('start', Array)
+#11 C:\xampp\htdocs\webprogramming1\index.php(19): Flight::__callStatic('start', Array)
+#12 {main}

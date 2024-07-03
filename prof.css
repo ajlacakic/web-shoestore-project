@@ -1,0 +1,42 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Responsive styles */
+  @media only screen and (max-width: 768px) {
+    /* Adjust card layout for smaller screens */
+    .user-card-full {
+      margin-bottom: 20px;
+    }
+    
+    .col-sm-4 {
+      width: 100%;
+      text-align: center;
+    }
+    
+    .col-sm-8 {
+      width: 100%;
+      text-align: center;
+    }
+    
+    .bg-c-lite-green {
+      padding: 20px 0;
+    }
+    
+    .user-profile h6 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    
+    .card-block {
+      padding: 20px;
+    }
+    
+    .user-profile i {
+      font-size: 24px;
+    }
+  }
+  

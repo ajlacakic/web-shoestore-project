@@ -1,0 +1,85 @@
+{
+    "shoes": [
+      {
+        "id": 33,
+        "name": "PUMA MULTIFLEX SL V INF",
+        "price": 93.50,
+        "images": [
+          "images/ks1.jpg",
+          "images/ks11.jpg"
+        ],
+        "sizes": ["25", "26", "27", "28", "29"]
+      },
+      {
+        "id": 34,
+        "name": "PUMA RS-X? TWILL AIRMESH JR",
+        "price": 83.50,
+        "images": [
+          "images/ks2.jpg",
+          "images/ks22.jpg"
+        ],
+        "sizes": ["25", "26", "27", "28", "29"]
+      },
+      {
+        "id": 35,
+        "name": "PUMA STEPFLEEX 2 SL VE GLITZ FS V INF",
+        "price": 107.10,
+        "images": [
+          "images/ks3.jpg",
+          "images/ks33.jpg"
+        ],
+        "sizes": ["25", "26", "27", "28", "29"]
+      },
+      {
+        "id": 36,
+        "name": "PUMA X-RAY SPEED MID WTR JR",
+        "price": 145.80,
+        "images": [
+          "images/ks4.jpg",
+          "images/ks44.jpg"
+        ],
+        "sizes": ["25", "26", "27", "28", "29"]
+      },
+      {
+        "id": 37,
+        "name": "PUMA X-RAY SPEED MID WTR JR",
+        "price": 123.60,
+        "images": [
+          "images/ks5.jpg",
+          "images/ks55.jpg"
+        ],
+        "sizes": ["25", "26", "27", "28", "29"]
+      },
+      {
+        "id": 38,
+        "name": "PUMA X-RAY AC PS",
+        "price": 135.50,
+        "images": [
+          "images/ks6.jpg",
+          "images/ks66.jpg"
+        ],
+        "sizes": ["25", "26", "27", "28", "29"]
+      },
+      {
+        "id": 39,
+        "name": "ADIDAS FORTARUN 2.0 EL I",
+        "price": 107.10,
+        "images": [
+          "images/ks7.jpg",
+          "images/ks77.jpg"
+        ],
+        "sizes": ["25", "26", "27", "28", "29"]
+      },
+      {
+        "id": 40,
+        "name": "AADIDAS FORTARUN 2.0 MICKEY EL I",
+        "price": 145.80,
+        "images": [
+          "images/ks8.jpg",
+          "images/ks88.jpg"
+        ],
+        "sizes": ["25", "26", "27", "28", "29"]
+      }
+    ]
+  }
+  

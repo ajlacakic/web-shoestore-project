@@ -1,0 +1,76 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="button"] {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+a {
+  color: #666;
+  text-decoration: none;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Styles for the login button */
+.button-log {
+  background-color: #ff6b6b;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-log:hover {
+  background-color: #ff4f4f;
+}
+
+/* Styles for the "Sign up" link */
+.signup a {
+  color: #007bff; /* Change color as needed */
+}

@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FashionWear</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.png">
+        
+        <link rel = "stylesheet" href = "main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel = "stylesheet" href = "bootstrap-5.0.2-dist/css/bootstrap.min.css">
+        <style>
+           
+            #products3 {
+                display: none;
+            }
+            #products1 {
+                display: none;
+            }
+            
+            @media screen and (max-width: 768px) {
+                
+                #about {
+                    display: none;
+                }
+            }
+            #about {
+                margin-top: 45em; 
+            }
+            .dropdown-toggle::after {
+      display: none !important; 
+    }
+    
+        </style>
+
+        </head>
+<body>
+
+    <script src="zalogin/utils.js"></script>
+    <script src = "bootstrap-5.0.2-dist/js/jquery-3.7.1.js"></script>
+    <script src = "spapp-master/spapp-master/assets/js/custom.js"></script>
+    <script src = "spapp-master/spapp-master/assets/js/jquery.spapp.js"></script>
+    <script>
+        src="loadCart.json"
+        </script>
+
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light py-1">
+        <div class="container">
+            
+                <img src="images/favicon.png" alt="icon" width="80" height="80">
+           
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item dropdown px-2 py-2">
+                        <a class="nav-link dropdown-toggle text-uppercase text-dark" href="#header" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">header</a>
+                        
+                    </li>
+                    <li class="nav-item dropdown px-2 py-2">
+                        <a class="nav-link dropdown-toggle text-uppercase text-dark" href="#products1" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">men</a>
+                        
+                    </li>
+                    
+                    <li class="nav-item dropdown px-2 py-2">
+                        <a class="nav-link dropdown-toggle text-uppercase text-dark" href="#products3" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">women</a>
+                        
+                    </li>
+                    <li class="nav-item dropdown px-2 py-2">
+                        <a class="nav-link dropdown-toggle text-uppercase text-dark" href="#products5" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">kids</a>
+                        
+                    </li>
+                    <li class = "nav-item px-2 py-2 border-0">
+                        <a class = "nav-link text-uppercase text-dark" href = "#about">about us</a>
+                    </li>
+                </ul>
+                <form id="searchForm" class="form-inline my-2 my-lg-0" style="display: flex;">
+                    <input id="searchBar" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="width: 90%;">
+                </form>
+                    <a href="#search"><button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="font-size: 0.8rem; padding: 0.3rem 0.5rem; ">Search</button></a>
+                
+                
+            </div>
+            <div class="order-lg-2 nav-btns">
+                <a href="#favourites">
+                    <button type="button" class="btn position-relative me-3">
+                        <i class="fa fa-heart fa-lg"></i> 
+                        <span class="position-absolute top-0 start-100 translate-middle badge bg-primary" style="background-color: red !important;">2</span>
+                    </button></a>
+                    <a href="#cart">
+                    <button type="button" class="btn position-relative me-3">
+                        <i class="fa fa-shopping-cart fa-lg"></i> 
+                        <span class="position-absolute top-0 start-100 translate-middle badge bg-primary" style="background-color: red !important;">5</span>
+                    </button></a>
+                    <a href="login.html">
+                    <button type="button" class="btn position-relative " >
+                        <i class="fas fa-sign-in-alt"></i>
+
+                       
+                    </button></a><a href="#profile">
+                        <button type="button" class="btn position-relative " >
+                            <i class="fa fa-user fa-lg"></i> 
+                           
+                        </button></a>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+    <main id="spapp" role="main">
+
+        <section id="products3" data-load="products3.html"></section>
+        <section id="products1" data-load="products1.html"></section>
+        <section id="products5" data-load="products5.html"></section>
+        <section id="header" data-load="header.html"></section>
+        <section id="favourites" data-load="favourites.html"></section>
+        <section id="cart" data-load="cart.html"></section>
+        <section id="profile" data-load="profile.html"></section>
+        <section id="search" data-load="search.html"></section>
+        
+      </main>
+    
+
+
+
+
+
+
+      
+
+    
+
+    <script>
+        
+        
+        var womensScriptLoaded = false;
+        var mensScriptLoaded = false;
+        var kidsScriptLoaded = false;
+        var cartScriptLoaded=false;
+        var favouritesScriptLoaded=false;
+        var profileScriptLoaded=false;
+        var searchScriptLoaded=false;
+
+
+        var app = $.spapp({
+            defaultView  : "header",
+            templateDir: "./vtpl/",
+        });
+      
+
+        app.route({
+            view : "products3",
+            load : "products3.html",
+            onCreate: function() { 
+                $('#products3').show();
+                $('#products1, #header,#products5,#favourites,#cart,#profile,#search').hide();
+             },
+             onReady: function() {
+                
+                if (!womensScriptLoaded) {
+                   
+                    var scriptElement = document.createElement('script');
+                    scriptElement.src = 'loadWomenSport.js'; 
+                    scriptElement.onload = function() {
+                        console.log('JavaScript file loaded and executed.');
+                        
+                        womensScriptLoaded = true; 
+                    };
+
+                    
+                    document.body.appendChild(scriptElement);
+                } else {
+                    console.log('Script has already been loaded.'); 
+                    window.location.reload();
+                }
+            }
+            });
+            app.route({
+            view : "products1",
+            load : "products1.html",
+            onCreate: function() { 
+                $('#products1').show();
+                $('#products3, #header,#products5,#favourites,#cart,#profile,#search').hide();
+             },
+             
+             onReady: function() {
+                
+                if (!mensScriptLoaded) {
+                    
+                    var scriptElement = document.createElement('script');
+                    scriptElement.src = 'loadmensport.js'; 
+                    scriptElement.onload = function() {
+                        console.log('JavaScript file loaded and executed.');
+                        
+                        mensScriptLoaded = true; 
+                    };
+
+                    
+                    document.body.appendChild(scriptElement);
+                } else {
+                    console.log('Script has already been loaded.'); 
+                    window.location.reload();
+                }
+            }
+            });
+            app.route({
+            view : "products5",
+            load : "products5.html",
+            onCreate: function() { 
+                $('#products5').show();
+                $('#products3, #header,#products1,#favourites,#cart,#profile,#search').hide();
+             },
+             
+             onReady: function() {
+                
+                if (!kidsScriptLoaded) {
+                    
+                    var scriptElement = document.createElement('script');
+                    scriptElement.src = 'loadKidsSport.js'; 
+                    scriptElement.onload = function() {
+                        console.log('JavaScript file loaded and executed.');
+                        
+                        kidsScriptLoaded = true; 
+                    };
+
+                    
+                    document.body.appendChild(scriptElement);
+                } else {
+                    console.log('Script has already been loaded.'); 
+                    window.location.reload();
+                }
+            }
+            });
+            
+            app.route({
+            view: "header",
+            load: "header.html",
+            onCreate: function() { 
+                console.log("Header view onCreate called."); 
+                
+                    $('#header').show();
+                    $('#products1, #products3,#products5,#favourites,#cart,#profile,#search').hide();
+                    
+                
+             },
+            
+        });
+        app.route({
+            view: "favourites",
+            load: "favourites.html",
+            onCreate: function() { 
+                console.log("cart view onCreate called."); 
+                
+                    $('#favourites').show();
+                    $('#products1, #products3,#products5,#header,#cart,#profile,#search').hide();
+                
+             },
+             onReady: function() {
+                
+                if (!favouritesScriptLoaded) {
+                    
+                    var scriptElement = document.createElement('script');
+                    scriptElement.src = 'loadFavorites.js'; 
+                    scriptElement.onload = function() {
+                        console.log('JavaScript file loaded and executed.');
+                       
+                        favouritesScriptLoaded = true; 
+                    };
+
+                    
+                    document.body.appendChild(scriptElement);
+                } else {
+                    console.log('Script has already been loaded.'); 
+                    window.location.reload();
+                }
+            }
+            });
+        app.route({
+            view: "cart",
+            load: "cart.html",
+            onCreate: function() { 
+                console.log("cart view onCreate called."); 
+                
+                    $('#cart').show();
+                    $('#products1, #products3,#products5,#header,#favourites,#profile,#search').hide();
+                
+             },
+             onReady: function() {
+                
+                if (!cartScriptLoaded) {
+                    
+                    var scriptElement = document.createElement('script');
+                    scriptElement.src = 'loadCart.js'; 
+                    scriptElement.onload = function() {
+                        console.log('JavaScript file loaded and executed.');
+                        
+                        cartScriptLoaded = true; 
+                    };
+
+                    
+                    document.body.appendChild(scriptElement);
+                } else {
+                    console.log('Script has already been loaded.'); 
+                    window.location.reload();
+                }
+            }
+            });
+            
+       
+        
+    
+        
+        app.route({
+            view: "profile",
+            load: "profile.html",
+            onCreate: function() { 
+                console.log("cart view onCreate called."); 
+                
+                    $('#profile').show();
+                    $('#products1, #products3,#products5,#header,#favourites,#cart,#search').hide();
+                
+             },
+             onReady: function() {
+                
+                if (!profileScriptLoaded) {
+                    
+                    var scriptElement = document.createElement('script');
+                    scriptElement.src = 'loadProfile.js'; 
+                    scriptElement.onload = function() {
+                        console.log('JavaScript file loaded and executed.');
+                        
+                        profileScriptLoaded = true; 
+                    };
+
+                    
+                    document.body.appendChild(scriptElement);
+                } else {
+                    console.log('Script has already been loaded.'); 
+                    window.location.reload();
+                }
+            }
+            });
+            app.route({
+            view : "search",
+            load : "search.html",
+            onCreate: function() { 
+                $('#search').show();
+                $('#products1, #header,#products5,#favourites,#cart,#profile,#products3').hide();
+             },
+             onReady: function() {
+                
+                if (!searchScriptLoaded) {
+
+                    console.log("i can print here")
+
+
+                    
+                    var scriptElement = document.createElement('script');
+                    scriptElement.src = 'loadsearch.js'; 
+                    scriptElement.onload = function() {
+                        console.log('JavaScript file loaded and executed.');
+                       
+                        searchScriptLoaded = true; 
+                    };
+
+                   
+                    document.body.appendChild(scriptElement);
+                } else {
+                    console.log('Script has already been loaded.'); 
+                    window.location.reload();
+                }
+            }
+            });
+            
+
+    
+            
+            
+
+        app.run();
+
+
+    </script>
+    
+    
+    
+    <footer id="about">
+        <div class="container container-footer">
+            <div class="sec aboutus">
+                <h2>About Us</h2>
+                <p>Welcome to FashionWear, where style meets sophistication...</p>
+                <ul class="sci">
+                    <li><a href="#"><i class="fab fa-facebook fa-lg" style="color: #fff;"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram fa-lg" style="color: #fff;"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter fa-lg" style="color: #fff;"></i></a></li>
+                </ul>
+            </div>
+            <div class="sec contact">
+                <h2>Contact Info</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class="fas fa-map-pin"></i></span>
+                        <span>Francuske Revolucije 21<br>Sarajevo, 71210<br>Bosna i Hercegovina</span>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-phone"></i></span>
+                        <span>+387 661 225 883</span>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-envelope"></i></span>
+                        <span>fashionwear@gmail.com</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="sec newsletter">
+                <h2>Newsletter Subscription</h2>
+                <form action="#" method="POST">
+                    <input type="email" name="email" placeholder="Enter your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    
+   
+</body>
+</html>

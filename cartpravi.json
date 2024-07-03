@@ -1,0 +1,28 @@
+{
+    "shoes": [
+      {
+        "id": 1,
+        "name": "NIKE DEFYALLDAY",
+        "price": 93.50,
+        "images": [
+          "https://www.nsport.ba/UserFiles/products/big/08/15/muske-patike-nike-defyallday-DJ1196-001.jpg",
+          "https://www.nsport.ba/UserFiles/products/big/08/15/muske-patike-nike-defyallday-DJ1196-001-3.jpg"
+        ],
+        "sizes": ["41", "42", "43", "44", "45"]
+      },
+      {
+        "id": 2,
+        "name": "NIKE DEFYALLDAY WHITE",
+        "price": 83.50,
+        "images": [
+          "https://www.nsport.ba/UserFiles/products/big/11/09/muske-patike-nike-defyallday-DJ1196-101.png",
+          "https://www.nsport.ba/UserFiles/products/big/11/09/muske-patike-nike-defyallday-DJ1196-101-3.png"
+        ],
+        "sizes": ["41", "42", "43", "44", "45"]
+      }
+      
+      
+      
+    ]
+  }
+  

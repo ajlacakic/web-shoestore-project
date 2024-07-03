@@ -1,0 +1,85 @@
+{
+    "shoes": [
+      {
+        "id": 1,
+        "name": "PUMA CA PRO MIX MTCH PS",
+        "price": 93.50,
+        "images": [
+          "images/kl1.jpg",
+          "images/kl11.jpg"
+        ],
+        "sizes": ["25", "26", "27", "28", "29"]
+      },
+      {
+        "id": 2,
+        "name": "PUMA CARINA 2.0 MERMAID V INF",
+        "price": 83.50,
+        "images": [
+          "images/kl2.jpg",
+          "images/kl22.jpg"
+        ],
+        "sizes": ["25", "26", "27", "28", "29"]
+      },
+      {
+        "id": 3,
+        "name": "PUMA CARINA 2.0 SPONGEBOB V INF",
+        "price": 107.10,
+        "images": [
+          "images/kl3.jpg",
+          "images/kl33.jpg"
+        ],
+        "sizes": ["25", "26", "27", "28", "29"]
+      },
+      {
+        "id": 4,
+        "name": "PUMA RS-X DREAMY JR",
+        "price": 145.80,
+        "images": [
+          "images/kl4.jpg",
+          "images/kl44.jpg"
+        ],
+        "sizes": ["25", "26", "27", "28", "29"]
+      },
+      {
+        "id": 5,
+        "name": "ADIDAS ADVANTAGE MOANA K",
+        "price": 123.60,
+        "images": [
+          "images/kl5.jpg",
+          "images/kl55.jpg"
+        ],
+        "sizes": ["25", "26", "27", "28", "29"]
+      },
+      {
+        "id": 6,
+        "name": "ADIDAS BREAKNET MICKEY CF",
+        "price": 135.50,
+        "images": [
+          "images/kl6.jpg",
+          "images/kl66.jpg"
+        ],
+        "sizes": ["25", "26", "27", "28", "29"]
+      },
+      {
+        "id": 7,
+        "name": "ADIDAS BREAKNET 2.0 EL K",
+        "price": 107.10,
+        "images": [
+          "images/kl7.jpg",
+          "images/kl77.jpg"
+        ],
+        "sizes": ["25", "26", "27", "28", "29"]
+      },
+      {
+        "id": 8,
+        "name": "ADIDAS OZWEEGO J",
+        "price": 145.80,
+        "images": [
+          "images/kl8.jpg",
+          "images/kl88.png"
+        ],
+        "sizes": ["25", "26", "27", "28", "29"]
+      }
+    ]
+  }
+  

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Details</title>
+    <link rel = "stylesheet" href = "main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel = "stylesheet" href = "bootstrap-5.0.2-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class = "navbar navbar-expand-lg navbar-light py-1 " style="padding-top: 10px; padding-bottom: 10px;">
+        <div class = "container">
+            <a class = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" href = "index.html">
+               <img src="images/favicon.png" alt="icon" width="80" height="=80">
+            </a>
+            
+            <div class="order-lg-2 nav-btns">
+               <a href="index.html#favourites">
+                <button type="button" class="btn position-relative me-3">
+                    <i class="fa fa-heart fa-lg"></i> 
+                    <span class="position-absolute top-0 start-100 translate-middle badge bg-primary" style="background-color: red !important;">2</span>
+                </button></a>
+                <a href="index.html#cart">
+                <button type="button" class="btn position-relative me-3">
+                    <i class="fa fa-shopping-cart fa-lg"></i> 
+                    <span class="position-absolute top-0 start-100 translate-middle badge bg-primary" style="background-color: red !important;">5</span>
+                </button></a>
+                <a href="login.html">
+                <button type="button" class="btn position-relative " >
+                    <i class="fas fa-sign-in-alt"></i>
+
+                   
+                </button></a>
+            </button></a><a href="index.html#profile">
+                <button type="button" class="btn position-relative " >
+                    <i class="fa fa-user fa-lg"></i> 
+                   
+                </button></a>
+            </div>
+            
+            
+            
+            
+
+            <button class = "navbar-toggler border-0" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navMenu">
+                <span class = "navbar-toggler-icon"></span>
+            </button>
+
+            <div class = "collapse navbar-collapse order-lg-1" id = "navMenu">
+                <ul class = "navbar-nav mx-auto text-center">
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link  text-uppercase text-dark" href = "index.html#header">home</a>
+                    </li>
+                    <li class="nav-item dropdown px-2 py-2">
+                        <a class="nav-link  text-uppercase text-dark" href="index.html#products1" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">men</a>
+                        
+                    </li>
+                    
+                    <li class="nav-item dropdown px-2 py-2">
+                        <a class="nav-link  text-uppercase text-dark" href="index.html#products3" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">women</a>
+                        
+                    </li>
+                    <li class="nav-item dropdown px-2 py-2">
+                        <a class="nav-link  text-uppercase text-dark" href="index.html#products5" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">kids</a>
+                        
+                    </li>
+                    <li class = "nav-item px-2 py-2 border-0">
+                        <a class = "nav-link text-uppercase text-dark" href = "#about">about us</a>
+                    </li>
+                    
+                </ul>
+                <form class="form-inline my-2 my-lg-0" style="display: flex;">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="width: 60%;">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="font-size: 0.8rem; padding: 0.3rem 0.5rem; margin-left: 5px;">Search</button>
+                </form>
+                
+                
+            </div>
+        </div>
+    </nav>
+    <section class="py-5">
+        <div class="container px-4 px-lg-5 my-5">
+            <div class="row gx-4 gx-lg-5 align-items-center" id="itemDetails">
+                
+            </div>
+        </div>
+    </section>
+    <footer id="about">
+        <div class="container">
+            <div class="sec aboutus">
+                <h2>About Us</h2>
+                <p>Welcome to FashionWear, where style meets sophistication. We are passionate about delivering the latest trends in fashion to our customers, ensuring they look and feel their best.
+
+                    At FashionWear, our mission is simple: to provide high-quality clothing and accessories that reflect the unique personalities and lifestyles of our customers. We strive to inspire confidence and self-expression through our curated collections.</p>
+            
+               <ul class="sci" >
+                    <li ><a href="#" ><i class="fab fa-facebook fa-lg"style="color: #fff"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram fa-lg" style="color: #fff"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter fa-lg" style="color: #fff"></i></a></li>
+                </ul>
+            </div>
+            <div class="sec contact">
+                <h2>Contact Info</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class="fas fa-map-pin"></i></span>
+                        <span>Francuske Revolucije 21<br>Sarajevo, 71210 <br> Bosna i Hercegovina</span>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-phone"></i></span>
+                        <span>+387 661 225 883</span>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-envelope"></i></span>
+                        <span>fasionwear@gmail.com</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="sec newsletter">
+                <h2>Newsletter Subscription</h2>
+                <form action="#" method="POST">
+                    <input type="email" name="email" placeholder="Enter your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            
+        </div>
+    </footer>
+
+
+
+  
+  
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const queryParams = new URLSearchParams(window.location.search);
+            const itemId = queryParams.get('id');
+            const pageType = getPageType();
+
+            function getPageType() {
+                const pathname = window.location.pathname.toLowerCase();
+                if (pathname.includes('products1')) {
+                    return 'products1';
+                } else if (pathname.includes('products3')) {
+                    return 'products3';
+                } else if (pathname.includes('products5')) {
+                    return 'products5';
+                }
+                return 'products3';
+            }
+
+            function fetchItemDetails(itemId, pageType) {
+                let dataURL = `database/allproducts.json`;
+
+                fetch(dataURL)
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Network response was not ok');
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        const item = data.shoes.find(item => item.id == itemId);
+                        if (item) {
+                            const itemHTML = `
+                                <div class="col-md-6">
+                                    <div class="small mb-1">SKU: BST-${item.id}</div>
+                                    <h1 class="display-5 fw-bolder">${item.name}</h1>
+                                    <div class="fs-5 mb-5">
+                                        <span>$${item.price.toFixed(2)}</span>
+                                        <br>
+                                        <span>sizes:</span>
+                                        <div class="size-buttons">
+                                            ${item.sizes.map(size => `<button>${size}</button>`).join('')}
+                                        </div>
+                                    </div>
+                                    <p class="lead">WOMEN SPORT SHOES</p>
+                                    <br>
+                                    <div class="d-flex">
+                                        <input class="form-control text-center me-3" id="inputQuantity" type="number" value="1" style="max-width: 3rem" />
+                                        <button class="btn btn-outline-dark flex-shrink-0" type="button" id="addToCartBtn">
+                                            <i class="bi-cart-fill me-1"></i>
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <img class="card-img-top mb-5 mb-md-0" src="${item.images[0]}" alt="${item.name}" />
+                                </div>
+                            `;
+                            document.getElementById('itemDetails').innerHTML = itemHTML;
+                            document.getElementById('addToCartBtn').addEventListener('click', function () {
+                                const quantity = document.getElementById('inputQuantity').value; // Get the current quantity
+                                addToCart(item, quantity);
+                            });
+                        } else {
+                            console.error('Item not found');
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error fetching item details:', error);
+                    });
+            }
+
+            fetchItemDetails(itemId, pageType);
+
+
+            function addToCrt(item) {
+                console.log('Adding item to cart:', item);
+            }
+
+            
+            $(document).on('click', '.addToCartBtn', function() {
+                const quantity = document.getElementById('inputQuantity').value; 
+                var shoeId = $(this).data('item-id'); 
+                console.log('A HELLO s:', item);
+                
+                fetch('php/get_user_id.php')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Failed to fetch user ID.');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    
+                    const loggedInUserId = data.user_id;
+
+                    
+                    addToCart(loggedInUserId, shoeId, quantity);
+                })
+                .catch(error => {
+                    console.error('Error fetching user ID:', error);
+                });
+            });
+
+            function addToCart(shoeId, quantity) {
+                var token = localStorage.getItem("user") ? JSON.parse(localStorage.getItem("user")).token : null;
+                console.log('A HELLO s:', shoeId.id);
+                $.ajax({
+                    type: 'POST',
+                    url: 'php/add_to_cart.php',
+                    headers: {
+            "Authentication": token
+        },
+                    data: { shoe_id: shoeId.id, quantity : quantity },
+                    success: function(response) {
+                        console.log('item added successfully.');
+                    },
+                    error: function(xhr, status, error) {
+                        console.error('Error adding item:', error);
+                    }
+                });
+            }
+
+                    });
+    </script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</body>
+</html>

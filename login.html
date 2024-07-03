@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Login</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="reg.css" rel="stylesheet" />
+</head>
+<body>
+  <div id="login-form-container" class="container mt-3">
+    <form id="login-form" method="post" >
+      <div class="mb-3 mt-3">
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          placeholder="Enter email"
+          name="email"
+          required
+        />
+      </div>
+      <div class="mb-3">
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          class="form-control"
+          id="password"
+          placeholder="Enter password"
+          name="password"
+          required
+        />
+      </div>
+      <button type="submit" class="btn btn-primary" href="index.html">Login</button>
+      <span class="signup">Don't have an account?
+        <a href="registerb.html">Register</a>
+       </span>
+    </form>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="assets/jquery.validate.min (1).js"></script>
+    <script src="zalogin/block-ui.js"></script>
+
+
+
+  <script src="zalogin/FormValidation.js"></script>
+  <script src="zalogin/utils.js"></script>
+  <script src="zalogin/rest_client.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var user = Utils.get_from_localstorage("user");
+      var loginButton = document.getElementById('loginOrLogoutButton');
+    
+      // Function to log out the user
+      function logoutUser() {
+        localStorage.clear();  // Clears all local storage
+        window.location.href = 'login.html';  // Redirect to login page or to a 'logged out' confirmation page
+      }
+    
+      // Function to handle login
+      function loginUser() {
+        var formData = {
+          email: document.getElementById('email').value,
+          password: document.getElementById('password').value
+        };
+        Utils.block_ui("#login-form-container");
+        RestClient.post(
+          "auth/login",
+          formData,
+          function (response) {
+            Utils.unblock_ui("#login-form-container");
+            if (response) {
+              localStorage.setItem("user", JSON.stringify(response));
+              console.log("User data saved to local storage:", response);
+              window.location.href = "index.html";
+            } else {
+              console.error("Login failed:", response.message);
+            }
+          },
+          function (xhr) {
+            Utils.unblock_ui("#login-form-container");
+            console.error("Login request failed:", xhr.responseText);
+          }
+        );
+      }
+    
+      // Setup the button based on the user's login status
+      if (user) {
+        loginButton.textContent = 'Logout';
+        loginButton.onclick = logoutUser;
+      } else {
+        loginButton.textContent = 'Login';
+        loginButton.onclick = loginUser;
+      }
+    });
+    </script>
+    
+  <script>
+    if (Utils.get_from_localstorage("user")) {
+      window.location = "index.html";
+    }
+
+    FormValidation.validate("#login-form", {}, function (data) {
+      Utils.block_ui("#login-form-container");
+
+      RestClient.post(
+  "auth/login",
+  data,
+  function (response) {
+    Utils.unblock_ui("#login-form-container");
+    if (response) {
+      // Save user data to local storage
+      localStorage.setItem("user", JSON.stringify(response));
+      console.log("User data saved to local storage:", response);
+      // Redirect to the index page
+      window.location = "index.html";
+    } else {
+      console.error("Login failed:", response.message);
+    }
+  },
+  function (xhr) {
+    Utils.unblock_ui("#login-form-container");
+    toastr.error(xhr.responseText);
+  }
+);
+
+
+    });
+  </script>
+  
+</body>
+</html>
